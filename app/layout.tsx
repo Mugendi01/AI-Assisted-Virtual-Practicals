@@ -1,10 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
-  title: "AI Lab - Science Practical Learning Platform",
-  description:
-    "AI-assisted science practical learning platform for students in low-resource school environments.",
+  title: "AI Lab - Practical Science, Without the Barriers",
+  description: "AI-assisted virtual practical laboratory for students in low-resource schools",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -14,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-slate-900 text-slate-100 min-h-screen">
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
