@@ -1,3 +1,6 @@
+LIVE URL = https://parlcrm.taile59314.ts.net/
+
+
 # AI Lab - Practical Science, Without the Barriers
 
 AI Lab is an AI-assisted virtual practical laboratory designed primarily for students in low-resource schools. It provides two learning pathways: Local Lab Mode (adapting practical learning to safe, locally available materials) and Virtual Lab Mode (interactive simulated experiments without physical laboratory equipment).
